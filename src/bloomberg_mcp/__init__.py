@@ -1,2 +1,4 @@
+import blpapi
+
 def main() -> None:
-    print("Hello from bloomberg-mcp!")
+    print("blpapi version:", blpapi.version())

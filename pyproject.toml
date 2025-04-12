@@ -7,7 +7,9 @@ authors = [
     { name = "Samuel Seng", email = "djsamseng@gmail.com" }
 ]
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "blpapi>=3.25.3",
+]
 
 [project.scripts]
 bloomberg-mcp = "bloomberg_mcp:main"
@@ -15,3 +17,7 @@ bloomberg-mcp = "bloomberg_mcp:main"
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
+
+[[tool.uv.index]]
+name = "blpapi"
+url = "https://blpapi.bloomberg.com/repository/releases/python/simple/"
