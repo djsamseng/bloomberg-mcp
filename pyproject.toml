@@ -1,0 +1,17 @@
+[project]
+name = "bloomberg-mcp"
+version = "0.1.0"
+description = "A MCP server providing financial data from Bloomberg blpapi"
+readme = "README.md"
+authors = [
+    { name = "Samuel Seng", email = "djsamseng@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+bloomberg-mcp = "bloomberg_mcp:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
