@@ -1,5 +1,9 @@
 # TODO
 
+- First we can simply wrap around xbbg which has already documented parameters which we can turn into tools
+  - [xbbg blp](https://github.com/alpha-xone/xbbg/blob/main/xbbg/blp.py#L30)
+- mock out the responses [example](https://github.com/msitt/blpapi-python/blob/master/examples/unittests/market-data-notifier/tests/test_eventprocessor.py)
+
 - LD_LIBRARY_PATH to include blpapi3 shared libraries [link](https://github.com/msitt/blpapi-python?tab=readme-ov-file#writing-bloomberg-api-programs-in-python)
 - Parse docs and generate tools
   - [blpapi](https://www.bloomberg.com/professional/support/api-library/)
