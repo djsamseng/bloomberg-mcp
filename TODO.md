@@ -1,5 +1,6 @@
 # TODO
 
+- LD_LIBRARY_PATH to include blpapi3 shared libraries [link](https://github.com/msitt/blpapi-python?tab=readme-ov-file#writing-bloomberg-api-programs-in-python)
 - Parse docs and generate tools
   - [blpapi](https://www.bloomberg.com/professional/support/api-library/)
     - [python blpapi docs](https://bloomberg.github.io/blpapi-docs/python/3.25.3/index.html)
