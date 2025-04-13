@@ -43,3 +43,7 @@ uv run bloomberg-mcp --sse --host 127.0.0.1 --port 8000
 ```bash
 uv run examples/clients/blp_stdio_client.py
 ```
+6. Run a test client that uses an existing running sse server
+```bash
+uv run examples/clients/blp_sse_client.py --host http://127.0.0.1 --port 8000
+```
