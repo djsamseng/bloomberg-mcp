@@ -26,14 +26,13 @@ def serve(args: types.StartupArgs):
     description="Get Bloomberg reference data"
   )
   async def bdp(tickers:typing.List[str], flds:typing.List[str], kwargs:typing.Dict[str, typing.Any]) -> pd.DataFrame:
-    logger.info("Running bdp:", tickers, flds)
     return blp.bdp(tickers=tickers, flds=flds, kwargs=kwargs)
 
   @mcp.tool(
     name="bds",
     description="Get Bloomberg block data"
   )
-  async def bds(tickers:typing.List[str], flds:typing.List[str], use_port:bool, kwargs:types.BloombergKWArgs=None) -> pd.DataFrame:
+  async def bds(tickers:typing.List[str], flds:typing.List[str], use_port:bool=False, kwargs:types.BloombergKWArgs=None) -> pd.DataFrame:
     return blp.bds(tickers=tickers, flds=flds, use_port=use_port, kwargs=kwargs)
 
   @mcp.tool(
