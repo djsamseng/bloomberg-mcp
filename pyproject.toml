@@ -6,7 +6,7 @@ readme = "README.md"
 authors = [
     { name = "Samuel Seng", email = "djsamseng@gmail.com" }
 ]
-requires-python = ">=3.10"
+requires-python = ">=3.10, <3.13"
 dependencies = [
     "blpapi>=3.25.3",
     "mcp[cli]>=1.6.0",

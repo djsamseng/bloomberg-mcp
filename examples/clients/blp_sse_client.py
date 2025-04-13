@@ -23,7 +23,6 @@ async def run() -> None:
   args = parse_args()
   url = "{0}:{1}/sse".format(args.host, args.port)
 
-  print(url)
   async with sse_client(url) as (read_stream, write_stream):
     async with ClientSession(
       read_stream=read_stream,
