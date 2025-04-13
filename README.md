@@ -20,6 +20,26 @@ uv add git+https://github.com/djsamseng/bloomberg-mcp
 uv run bloomberg-mcp --sse --host 127.0.0.1 --port 8000
 ```
 
+## Using Bloomberg-MCP from [Cursor](https://docs.cursor.com/context/model-context-protocol)
+- For project only: create .cursor/mcp.json in your project directory
+- For global: create `~/.cursor/mcp.json`
+- Replace the host and port with the MCP server running from above
+```json
+{
+  "mcpServers": {
+    "server-name": {
+      "url": "http://127.0.0.1:8000/sse",
+    }
+  }
+}
+```
+
+## Using Bloomberg-MCP from [Claude Code](https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/tutorials#set-up-model-context-protocol-mcp)
+- Replace the url with the MCP server running from above
+```bash
+claud mcp add --transport sse bloomberg-mcp http://127.0.0.1:8000/sse
+```
+- [Remote hosts for Claude Desktop is still in development](https://modelcontextprotocol.io/quickstart/user#1-download-claude-for-desktop)
 
 ## Development
 ### Requirements
