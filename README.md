@@ -4,19 +4,20 @@ A MCP server providing financial data from Bloomberg blpapi
 
 ## Installation
 ### Using [UV](https://docs.astral.sh/uv/getting-started/installation/)
+- First add an index to bloomberg blpapi in `pyproject.toml`
+```
+[[tool.uv.index]]
+name = "blpapi"
+url = "https://blpapi.bloomberg.com/repository/releases/python/simple/"
+```
+
 ```bash
 uv add git+https://github.com/djsamseng/bloomberg-mcp
 ```
 
-### Using PIP
-```bash
-pip3 install git+https://github.com/djsamseng/bloomberg-mcp
-```
-
-
 ## Run the MCP Server
 ```bash
-python3 -m bloomberg_mcp --sse --host 127.0.0.1 --port 8000
+uv run bloomberg-mcp --sse --host 127.0.0.1 --port 8000
 ```
 
 
