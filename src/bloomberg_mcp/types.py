@@ -25,3 +25,5 @@ class StartupArgs:
       "host": self.host,
       "port": self.port,
     })
+
+BloombergKWArgs = typing.Union[None, typing.Dict[str, typing.Any]]
