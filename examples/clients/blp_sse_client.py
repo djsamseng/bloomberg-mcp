@@ -11,7 +11,7 @@ import asyncio
 from mcp.client.sse import sse_client
 from mcp.client.session import ClientSession
 
-import call_tools
+import blp_call_tools
 
 def parse_args():
   parser = argparse.ArgumentParser()
@@ -37,12 +37,12 @@ async def run() -> None:
       tools = await session.list_tools()
       print("Available tools:", tools)
 
-      await call_tools.test_bdp(session)
-      await call_tools.test_bdh(session)
-      await call_tools.test_bds(session)
-      await call_tools.test_bdib(session)
-      await call_tools.test_earning(session)
-      await call_tools.test_dividend(session)
+      await blp_call_tools.test_bdp(session)
+      await blp_call_tools.test_bdh(session)
+      await blp_call_tools.test_bds(session)
+      await blp_call_tools.test_bdib(session)
+      await blp_call_tools.test_earning(session)
+      await blp_call_tools.test_dividend(session)
 
 def main() -> None:
   asyncio.run(run())

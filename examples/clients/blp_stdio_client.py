@@ -12,7 +12,7 @@ from mcp import ClientSession, StdioServerParameters
 from mcp import types as mcp_types
 from mcp.client.stdio import stdio_client
 
-import call_tools
+import blp_call_tools
 
 async def run():
 
@@ -35,12 +35,12 @@ async def run():
       tools = await session.list_tools()
       print("Available tools:", tools)
 
-      await call_tools.test_bdp(session)
-      await call_tools.test_bdh(session)
-      await call_tools.test_bds(session)
-      await call_tools.test_bdib(session)
-      await call_tools.test_earning(session)
-      await call_tools.test_dividend(session)
+      await blp_call_tools.test_bdp(session)
+      await blp_call_tools.test_bdh(session)
+      await blp_call_tools.test_bds(session)
+      await blp_call_tools.test_bdib(session)
+      await blp_call_tools.test_earning(session)
+      await blp_call_tools.test_dividend(session)
 
 
 def main() -> None:
