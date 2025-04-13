@@ -8,7 +8,8 @@
 import asyncio
 import typing
 
-from mcp import ClientSession, StdioServerParameters, types
+from mcp import ClientSession, StdioServerParameters
+from mcp import types as mcp_types
 from mcp.client.stdio import stdio_client
 
 
