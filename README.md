@@ -16,7 +16,7 @@ pip3 install git+https://github.com/djsamseng/bloomberg-mcp
 
 ## Run the MCP Server
 ```bash
-python3 -m bloomberg_mcp
+python3 -m bloomberg_mcp --sse --host 127.0.0.1 --port 8000
 ```
 
 
@@ -37,5 +37,9 @@ source .venv/bin/activate
 ```
 4. Run the MCP server
 ```bash
-uv run bloomberg-mcp
+uv run bloomberg-mcp --sse --host 127.0.0.1 --port 8000
+```
+5. Run a test client that starts up it's own server in stdio mode
+```bash
+uv run examples/clients/blp_stdio_client.py
 ```
