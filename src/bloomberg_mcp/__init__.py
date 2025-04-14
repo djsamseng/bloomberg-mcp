@@ -7,7 +7,7 @@ from . import blp_mcp_server
 
 def parse_args():
   parser = argparse.ArgumentParser()
-  parser.add_argument("--sse", action="store_true", help="Run ")
+  parser.add_argument("--sse", action="store_true", help="Run an sse server instead of stdio")
   parser.add_argument("--host", type=str, default=None)
   parser.add_argument("--port", type=int, default=None)
 
