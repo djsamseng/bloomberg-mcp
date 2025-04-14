@@ -41,6 +41,9 @@ claud mcp add --transport sse bloomberg-mcp http://127.0.0.1:8000/sse
 ```
 - [Remote hosts for Claude Desktop is still in development](https://modelcontextprotocol.io/quickstart/user#1-download-claude-for-desktop)
 
+## Using Bloomberg-MCP from [Aider](https://aider.chat/)
+- [Pull request pending](https://github.com/Aider-AI/aider/pull/3672)
+
 ## Development
 ### Requirements
 1. [Install UV](https://docs.astral.sh/uv/getting-started/installation/)
