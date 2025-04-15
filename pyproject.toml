@@ -20,6 +20,10 @@ bloomberg-mcp = "bloomberg_mcp:main"
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
+[tool.uv.sources]
+blpapi = { index = "blpapi" }
+
 [[tool.uv.index]]
 name = "blpapi"
 url = "https://blpapi.bloomberg.com/repository/releases/python/simple/"
+explicit = true

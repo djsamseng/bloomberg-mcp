@@ -43,7 +43,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "blpapi", specifier = ">=3.25.3" },
+    { name = "blpapi", specifier = ">=3.25.3", index = "https://blpapi.bloomberg.com/repository/releases/python/simple/" },
     { name = "mcp", extras = ["cli"], specifier = ">=1.6.0" },
     { name = "xbbg", specifier = ">=0.7.7" },
 ]
