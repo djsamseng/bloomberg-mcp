@@ -1,5 +1,5 @@
 [project]
-name = "bloomberg-mcp"
+name = "blpapi-mcp"
 version = "0.1.0"
 description = "A MCP server providing financial data from Bloomberg blpapi"
 readme = "README.md"
@@ -14,7 +14,7 @@ dependencies = [
 ]
 
 [project.scripts]
-bloomberg-mcp = "bloomberg_mcp:main"
+blpapi-mcp = "blpapi_mcp:main"
 
 [build-system]
 requires = ["hatchling"]

@@ -15,7 +15,7 @@ from . import types
 
 
 def serve(args: types.StartupArgs):
-  mcp = FastMCP("bloomberg-mcp", host=args.host, port=args.port)
+  mcp = FastMCP("blpapi-mcp", host=args.host, port=args.port)
 
   logger = get_logger(__name__)
   logger.info("startup args:" + str(args))

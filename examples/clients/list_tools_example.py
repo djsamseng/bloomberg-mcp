@@ -25,7 +25,7 @@ async def run():
 
   server_params = StdioServerParameters(
     command="uv",
-    args=["run", "bloomberg-mcp"],
+    args=["run", "blpapi-mcp"],
     env=None,
   )
 
