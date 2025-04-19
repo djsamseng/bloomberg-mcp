@@ -1,6 +1,8 @@
 # BLPAPI-MCP
 
-A MCP server providing financial data from Bloomberg's blpapi. Your Bloomberg Terminal must be running (BBComm must be accessible).
+A MCP server providing financial data from Bloomberg's blpapi.
+
+Note: A Bloomberg Terminal must be running (BBComm must be accessible) for data access.
 
 ## Installation
 ### Using [UV](https://docs.astral.sh/uv/getting-started/installation/)

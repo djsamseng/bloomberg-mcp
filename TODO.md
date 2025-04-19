@@ -18,6 +18,18 @@
     - `//blp/instruments`
     - `//blp/mktlist/secids`
   - CUSIP lookup
+  - RV for related companies
+
+- Goal: "Who are TSLA's peers? What is their respective market cap? Return the results in _descending_ order of market cap."
+  - RAG search over descriptions and examples of tools using embeddings
+  ```python
+  tool_vector_index = langchain_ollama.OllamaEmbeddings()
+  tool_vector_index.similarity_search(query=query, k=4)
+  ```
+    - [openbb_functions.md](openbb_functions.md) has a good example of descriptions
+    - Then pass the matching tools, with simplified examples of how to call that tool
+      - MCP labels the tool with a simple description
+      - RAG search uses a long complex description (for tool finding)
 
 - Add tests
   - In [pyproject.toml](https://github.com/fpgmaas/cookiecutter-uv/blob/f27ad09c28e92ff5231291003c0aab2f483fdb4c/%7B%7Bcookiecutter.project_name%7D%7D/pyproject.toml#L66)
